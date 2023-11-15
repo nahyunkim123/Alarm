@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clock</title>
+    <link rel="stylesheet" href="css/clock.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="phone">
+        <div class="screen" id="screen">
+          <div class="content">
+              <div id="battery">
+                <div class="battery-inner">
+                  <div class="battery-level" id="battery-level">100%</div>
+                </div>
+              </div>
+              <div class="clock">
+                <div class="time"></div>
+              </div>
+
+              <div class="alarm-container">
+                <h1>ALARM</h1>
+                <div class="alarm-input">
+                  <input
+                    type="number"
+                    id="hour"
+                    placeholder="시"
+                    min="0"
+                    max="23"
+                  />
+                  <input
+                    type="number"
+                    id="minute"
+                    placeholder="분"
+                    min="0"
+                    max="59"
+                  />
+                  <input
+                    type="number"
+                    id="second"
+                    placeholder="초"
+                    min="0"
+                    max="59"
+                  />
+                  <button id="add-alarm">+</button>
+                </div>
+              </div>
+              <p class="ALname">Alarm List</p>
+              <div class="alarm-screen" id="alarm-screen"></div>
+            
+            <!-- 디데이 -->
+              <div class="d-wrap">
+                <div class="content">
+                <h3>D-Day</h3>
+                <div class="dday">
+                    <span></span>
+                </div>
+                </div>
+                    <p>2024년 1월 1일까지</p>
+                </div>
+            </div>
+        </div><!-- screen 끝-->
+        <div id="onOff"></div>
+      </div><!-- phone 끝 -->
+    </div> <!-- wrap 끝 -->
+    <script src="js/clock.js"></script>
+  </body>
+</html>
